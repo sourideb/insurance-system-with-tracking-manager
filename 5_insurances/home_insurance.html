@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Insurance Policies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-image: url("../pictures/bpic3.jpg");
+        }
+        h1 {
+            color: #333;
+        }
+        .policy-list {
+            margin-bottom: 20px;
+        }
+        .policy-item {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .calculate {
+            padding: 10px;
+            border: 1px solid #000;
+            max-width: 300px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #ffc107;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <h1>Home Insurance Policies</h1>
+    
+    <div class="policy-list">
+        <div class="policy-item">
+            <h2>Policy H1</h2>
+            <p>Details about Policy H1. This policy covers damages due to natural disasters.</p>
+        </div>
+        <div class="policy-item">
+            <h2>Policy H2</h2>
+            <p>Details about Policy H2. This policy covers fire and theft damages.</p>
+        </div>
+        <div class="policy-item">
+            <h2>Policy H3</h2>
+            <p>Details about Policy H3. This policy offers coverage for home contents.</p>
+        </div>
+    </div>
+
+    <div class="calculate">
+        <h3>Calculate Your Premium</h3>
+        <form action="#">
+            <label for="property-value">Property Value:</label>
+            <input type="number" id="property-value" name="property-value" required>
+
+            <label for="age">Owner Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="policy-term">Policy Term (years):</label>
+            <input type="number" id="policy-term" name="policy-term" required>
+
+            <input type="submit" value="Calculate Premium">
+        </form>
+    </div>
+</body>
+</html>

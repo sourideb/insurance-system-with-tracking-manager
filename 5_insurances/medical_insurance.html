@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Insurance Policies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-image: url("../pictures/bpic3.jpg");
+        }
+        h1 {
+            color: #333;
+        }
+        .policy-list {
+            margin-bottom: 20px;
+        }
+        .policy-item {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        .calculate {
+            padding: 10px;
+            border: 1px solid #000;
+            max-width: 300px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Medical Insurance Policies</h1>
+    
+    <div class="policy-list">
+        <div class="policy-item">
+            <h2>Policy X</h2>
+            <p>Details about Policy X. This policy covers hospitalization and other medical expenses.</p>
+        </div>
+        <div class="policy-item">
+            <h2>Policy Y</h2>
+            <p>Details about Policy Y. This policy covers medical expenses including surgeries.</p>
+        </div>
+        <div class="policy-item">
+            <h2>Policy Z</h2>
+            <p>Details about Policy Z. This policy offers coverage for critical illnesses.</p>
+        </div>
+    </div>
+
+    <div class="calculate">
+        <h3>Calculate Your Premium</h3>
+        <form action="#">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="sum-assured">Sum Assured:</label>
+            <input type="number" id="sum-assured" name="sum-assured" required>
+
+            <label for="policy-term">Policy Term (years):</label>
+            <input type="number" id="policy-term" name="policy-term" required>
+
+            <input type="submit" value="Calculate Premium">
+        </form>
+    </div>
+</body>
+</html>
